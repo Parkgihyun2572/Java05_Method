@@ -16,6 +16,10 @@ O		O			int func(int num){return 0;}
 3. 리턴타입(출력)과 매개변수(입력) 구성을 고려하여 메소드를 만든다.
 4. 메소드이름과 매개값을 입력하여 메소드를 사용한다.
 
+매개변수(parameter): 메소드 선언시 ()안에 필요한 변수. variable
+인자(argument): 메소드 호출시 전달되는 데이터. value
+("인자" = "인수" = "매개값")
+
 */
 package contents;
 
@@ -46,7 +50,7 @@ public class C02_Declaration {
 	//Case4) 리턴O, 매개변수O 메소드
 	//예제: 매개변수로 4개 정수를 입력 받고
 	//	   평균값을 리턴하는 메소드를 작성하고 실행해보시오.
-	static double average(int a, int b, int c, int d) {
+	static double average(int a, int b, int c, int d) { //a,b,c,d가 매개변수
 		return (a + b + c+ d)/4.0;
 	}
 	
@@ -71,7 +75,8 @@ public class C02_Declaration {
 		repeatMsg("23일입니다.", 3);
 		
 		System.out.println("=====Case4=====");
-		double avg = average(10, 15, 20, 30);
+		double avg = average(10, 15, 20, 30);//10,20,30,40은 인자
+		
 		System.out.println("네 수의 평균: " +avg);
 		
 		int[] num1 = {5, 10, 20};
